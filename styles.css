@@ -1,0 +1,43 @@
+.main-content{
+
+    justify-content: center;
+    align-content: center;
+    background-color: #f5f5dc;
+}
+
+/* para agrandar el headr, despues capaz no hae falta meterle reglas de tamaño a la img */
+
+.main-picture{
+
+    width:400px;
+    height:400px;
+}
+
+
+
+
+.profile-container,
+.projects-container,
+.contact-info-container{
+    
+    border: 1px solid red;
+}
+
+
+.contact-info-container{
+    
+    display:grid;
+    background-color: #daf7ae;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "contact-me-h3 footer-image"
+    "contact-me-text footer-image"
+    "contact-info-vias footer-image";
+    
+}
+
+.contact-me-h3{grid-area:contact-me-h3;}
+.contact-me-text{grid-area:contact-me-text;}
+.contact-info-vias{grid-area:contact-info-vias;}
+.footer-image{grid-area:footer-image;}
