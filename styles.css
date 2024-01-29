@@ -7,20 +7,65 @@
 
 /* para agrandar el headr, despues capaz no hae falta meterle reglas de tamaño a la img */
 
+.profile-container{
+    
+    display:grid;
+    grid-template-columns:  20% 80%;
+    grid-template-rows:  1fr;
+
+}
+
 .main-picture{
 
-    width:400px;
-    height:400px;
+    border-radius:10px;
+    align-self: center;
+    min-width:50%;     
+    max-width:100%;
+}
+
+.footer-image{
+    
+    border-radius:10px;
+    align-self: center;
+    min-width:30%;     
+    max-width:70%;
+}
+
+.about-me-text{
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.my-work-h3{
+
+    margin-left: 1.5em;
 }
 
 
+.project-cards-container{
+    margin: 1.5em;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+}
 
+.project-card{
+
+    max-width: 150px;
+    margin:15px;
+}
 
 .profile-container,
 .projects-container,
 .contact-info-container{
     
     border: 1px solid red;
+    
 }
 
 
@@ -37,7 +82,24 @@
     
 }
 
+.contact-me-h3,
+.contact-me-text,
+.contact-info-vias
+{
+    margin-left: 15% ;
+}
+
 .contact-me-h3{grid-area:contact-me-h3;}
 .contact-me-text{grid-area:contact-me-text;}
 .contact-info-vias{grid-area:contact-info-vias;}
 .footer-image{grid-area:footer-image;}
+
+
+/*
+
+media queries
+
+- una que haga que se achique a tamaño de celular si llega a determinado ancho
+
+
+*/
